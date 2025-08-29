@@ -1,0 +1,11 @@
+student_id,first_name,last_name,email,major,enrollment_year,gpa
+1,John,Doe,john.doe@university.edu,Computer Science,2022,3.5
+2,Jane,Smith,jane.smith@university.edu,Biology,2023,3.8
+3,Alex,Johnson,alex.johnson@university.edu,Computer Science,2021,3.2
+4,Emily,Davis,emily.davis@university.edu,Mathematics,2024,3.9
+5,Michael,Brown,michael.brown@university.edu,Computer Science,2022,3.6
+6,Sophia,Wilson,sophia.wilson@university.edu,Physics,2023,3.7
+7,Daniel,Martinez,daniel.martinez@university.edu,Computer Science,2021,3.4
+8,Olivia,Garcia,olivia.garcia@university.edu,Biology,2024,3.8
+9,James,Rodriguez,james.rodriguez@university.edu,Mathematics,2022,3.5
+10,Isabella,Hernandez,isabella.hernandez@university.edu,Physics,2023,3.6
