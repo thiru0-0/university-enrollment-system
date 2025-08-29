@@ -1,0 +1,11 @@
+course_id,course_name,department,credits,instructor,semester_offered,max_enrollment
+CS101,Introduction to Programming,Computer Science,3,Prof. Alice Green,Fall 2025,50
+CS201,Data Structures and Algorithms,Computer Science,4,Prof. Bob White,Fall 2025,40
+CS301,Database Systems,Computer Science,3,Prof. Carol Black,Spring 2026,35
+BIO101,Introduction to Biology,Biology,4,Prof. David Blue,Fall 2025,60
+BIO201,Genetics,Biology,3,Prof. Eve Red,Spring 2026,45
+MATH101,Calculus I,Mathematics,3,Prof. Frank Yellow,Fall 2025,50
+MATH201,Linear Algebra,Mathematics,3,Prof. Grace Purple,Spring 2026,40
+PHYS101,Physics I,Physics,4,Prof. Henry Orange,Fall 2025,55
+PHYS201,Quantum Mechanics,Physics,3,Prof. Ivy Pink,Spring 2026,30
+CS401,Software Engineering,Computer Science,4,Prof. Jack Brown,Fall 2025,35

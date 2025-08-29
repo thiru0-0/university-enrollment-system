@@ -1,0 +1,16 @@
+enrollment_id,student_id,course_id,enrollment_date,status,grade
+1,1,CS101,2025-08-15,Enrolled,
+2,1,CS201,2025-08-20,Enrolled,
+3,2,BIO101,2025-08-10,Enrolled,
+4,3,CS101,2025-08-12,Enrolled,
+5,3,CS301,2025-08-18,Waitlisted,
+6,4,MATH101,2025-08-14,Enrolled,
+7,5,CS101,2025-08-16,Enrolled,
+8,5,CS201,2025-08-22,Enrolled,
+9,6,PHYS101,2025-08-11,Enrolled,
+10,7,CS201,2025-08-19,Enrolled,
+11,8,BIO101,2025-08-13,Enrolled,
+12,9,MATH101,2025-08-17,Enrolled,
+13,10,PHYS101,2025-08-21,Enrolled,
+14,1,CS401,2025-08-23,Enrolled,
+15,3,CS401,2025-08-24,Enrolled
