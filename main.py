@@ -199,18 +199,31 @@ def report_menu(rm):
         print("\n--- Reports ---")
         print("1. Report for a Student")
         print("2. Report for All Students")
-        print("3. Back to Main Menu")
+        print("3. GPA Leaderboard")
+        print("4. Course Popularity Stats")
+        print("5. Department Dashboard")
+        print("6. Back to Main Menu")
 
         choice = input("Enter your choice: ")
 
         if choice == "1":
-            sid = int(input("Enter Student ID: "))
+            sid = input("Enter Student ID: ")
             rm.student_course_report(sid)
 
         elif choice == "2":
             rm.all_students_report()
 
         elif choice == "3":
+            dept = input("Enter Department (or leave blank for all): ")
+            rm.gpa_leaderboard(dept if dept else None)
+
+        elif choice == "4":
+            rm.course_popularity()
+
+        elif choice == "5":
+            rm.department_dashboard()
+
+        elif choice == "6":
             break
         else:
             print("Invalid choice. Try again.")
