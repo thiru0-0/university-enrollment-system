@@ -2,6 +2,9 @@ from management.student_management import StudentManagement
 from management.course_management import CourseManagement
 from management.enrollment_management import EnrollmentManagement
 from management.report_management import ReportManagement
+from management.ai_recommendation import AIRecommendation
+# ...existing imports...
+
 
 # ------------------ Student Menu ------------------ #
 def student_menu(sm):
@@ -234,6 +237,8 @@ def main():
     cm = CourseManagement("data/courses.csv")
     em = EnrollmentManagement("data/enrollments.csv", "data/students.csv", "data/courses.csv")
     rm = ReportManagement("data/students.csv", "data/courses.csv", "data/enrollments.csv")
+    groq_client = ... # Initialize your Groq client here
+    ai = AIRecommendation("data/students.csv", "data/courses.csv", "data/enrollments.csv", groq_client)
 
     while True:
         print("\n--- Main Menu ---")
@@ -254,8 +259,10 @@ def main():
             enrollment_menu(em)
         elif choice == "4":
             report_menu(rm)
+        # ...existing code...
         elif choice == "5":
-            print("⚡ AI Course Generation is under development...")
+            sid = input("Enter Student ID for AI Recommendation: ")
+            ai.get_ai_recommendations(sid)
         elif choice == "6":
             print("Exiting program.")
             break
