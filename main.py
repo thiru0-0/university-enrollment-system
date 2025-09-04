@@ -1,3 +1,4 @@
+import os
 from management.student_management import StudentManagement
 from management.course_management import CourseManagement
 from management.enrollment_management import EnrollmentManagement
@@ -237,7 +238,15 @@ def main():
     cm = CourseManagement("data/courses.csv")
     em = EnrollmentManagement("data/enrollments.csv", "data/students.csv", "data/courses.csv")
     rm = ReportManagement("data/students.csv", "data/courses.csv", "data/enrollments.csv")
-    groq_client = ... # Initialize your Groq client here
+    # Initialize Groq client from env var if available; otherwise None
+    groq_client = None
+    try:
+        api_key = os.environ.get('GROQ_API_KEY')
+        if api_key:
+            from groq import Groq
+            groq_client = Groq(api_key=api_key)
+    except Exception:
+        groq_client = None
     ai = AIRecommendation("data/students.csv", "data/courses.csv", "data/enrollments.csv", groq_client)
 
     while True:
